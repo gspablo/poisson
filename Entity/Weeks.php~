@@ -1,0 +1,55 @@
+<?php
+
+namespace bet\resultBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Weeks
+ *
+ * @ORM\Table(name="weeks")
+ * @ORM\Entity
+ */
+class Weeks
+{
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_start", type="datetime", nullable=false)
+     */
+    private $dateStart;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="date_end", type="datetime", nullable=false)
+     */
+    private $dateEnd;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="poisson_done", type="boolean", nullable=false)
+     */
+    private $poissonDone;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="week_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $weekId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="league_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $leagueId;
+
+
+}

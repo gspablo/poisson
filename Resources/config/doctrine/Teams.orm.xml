@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="bet\resultBundle\Entity\Teams" table="teams">
+    <id name="teamId" type="integer" column="team_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="betName" type="string" column="bet_name" length="50" nullable="true"/>
+    <field name="teamName" type="string" column="team_name" length="50" nullable="true"/>
+    <field name="leagueId" type="integer" column="league_id" nullable="true"/>
+  </entity>
+</doctrine-mapping>

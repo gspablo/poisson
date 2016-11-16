@@ -1,0 +1,148 @@
+<?php
+
+namespace bet\resultBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * SummaryTeamWeek
+ *
+ * @ORM\Table(name="summary_team_week")
+ * @ORM\Entity
+ */
+class SummaryTeamWeek
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="h_Games", type="integer", nullable=true)
+     */
+    private $hGames;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="h_Goals_for", type="integer", nullable=true)
+     */
+    private $hGoalsFor;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="h_Average_goals_for", type="float", nullable=true)
+     */
+    private $hAverageGoalsFor;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="h_Goals_aga", type="integer", nullable=true)
+     */
+    private $hGoalsAga;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="h_Average_goals_aga", type="float", nullable=true)
+     */
+    private $hAverageGoalsAga;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="h_Attack_strength", type="float", nullable=true)
+     */
+    private $hAttackStrength;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="h_Defensive_strength", type="float", nullable=true)
+     */
+    private $hDefensiveStrength;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="a_Games", type="integer", nullable=true)
+     */
+    private $aGames;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="a_Goals_for", type="integer", nullable=true)
+     */
+    private $aGoalsFor;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="a_Average_goals_for", type="float", nullable=true)
+     */
+    private $aAverageGoalsFor;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="a_Goals_aga", type="integer", nullable=true)
+     */
+    private $aGoalsAga;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="a_Average_goals_aga", type="float", nullable=true)
+     */
+    private $aAverageGoalsAga;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="a_Attack_strength", type="float", nullable=true)
+     */
+    private $aAttackStrength;
+
+    /**
+     * @var float
+     *
+     * @ORM\Column(name="a_Defensive_strength", type="float", nullable=true)
+     */
+    private $aDefensiveStrength;
+
+    /**
+     * @var boolean
+     *
+     * @ORM\Column(name="is_summary", type="boolean", nullable=true)
+     */
+    private $isSummary;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="team_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $teamId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="week", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $week;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="type", type="string", length=20)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="NONE")
+     */
+    private $type;
+
+
+}

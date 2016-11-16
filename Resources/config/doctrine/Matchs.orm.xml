@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="bet\resultBundle\Entity\Matchs" table="matchs">
+    <id name="matchId" type="integer" column="match_id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="leagueId" type="integer" column="league_id" nullable="true"/>
+    <field name="mWeek" type="string" column="m_week" length="50" nullable="true"/>
+    <field name="mDate" type="datetime" column="m_date" nullable="true"/>
+    <field name="hTeamId" type="integer" column="h_team_id" nullable="true"/>
+    <field name="hGoals" type="integer" column="h_goals" nullable="true"/>
+    <field name="aTeamId" type="integer" column="a_team_id" nullable="true"/>
+    <field name="aGoals" type="integer" column="a_goals" nullable="true"/>
+  </entity>
+</doctrine-mapping>

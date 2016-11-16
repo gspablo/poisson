@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="bet\resultBundle\Entity\SummaryTeamWeek" table="summary_team_week">
+    <id name="teamId" type="integer" column="team_id"/>
+    <id name="week" type="integer" column="week"/>
+    <id name="type" type="string" column="type" length="20"/>
+    <field name="hGames" type="integer" column="h_Games" nullable="true"/>
+    <field name="hGoalsFor" type="integer" column="h_Goals_for" nullable="true"/>
+    <field name="hAverageGoalsFor" type="float" column="h_Average_goals_for" nullable="true"/>
+    <field name="hGoalsAga" type="integer" column="h_Goals_aga" nullable="true"/>
+    <field name="hAverageGoalsAga" type="float" column="h_Average_goals_aga" nullable="true"/>
+    <field name="hAttackStrength" type="float" column="h_Attack_strength" nullable="true"/>
+    <field name="hDefensiveStrength" type="float" column="h_Defensive_strength" nullable="true"/>
+    <field name="aGames" type="integer" column="a_Games" nullable="true"/>
+    <field name="aGoalsFor" type="integer" column="a_Goals_for" nullable="true"/>
+    <field name="aAverageGoalsFor" type="float" column="a_Average_goals_for" nullable="true"/>
+    <field name="aGoalsAga" type="integer" column="a_Goals_aga" nullable="true"/>
+    <field name="aAverageGoalsAga" type="float" column="a_Average_goals_aga" nullable="true"/>
+    <field name="aAttackStrength" type="float" column="a_Attack_strength" nullable="true"/>
+    <field name="aDefensiveStrength" type="float" column="a_Defensive_strength" nullable="true"/>
+    <field name="isSummary" type="boolean" column="is_summary" nullable="true"/>
+  </entity>
+</doctrine-mapping>

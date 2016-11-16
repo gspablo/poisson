@@ -1,0 +1,46 @@
+<?php
+
+namespace bet\resultBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Teams
+ *
+ * @ORM\Table(name="teams")
+ * @ORM\Entity
+ */
+class Teams
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="bet_name", type="string", length=50, nullable=true)
+     */
+    private $betName;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="team_name", type="string", length=50, nullable=true)
+     */
+    private $teamName;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="league_id", type="integer", nullable=true)
+     */
+    private $leagueId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="team_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $teamId;
+
+
+}

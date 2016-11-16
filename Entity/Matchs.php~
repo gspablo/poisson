@@ -1,0 +1,74 @@
+<?php
+
+namespace bet\resultBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Matchs
+ *
+ * @ORM\Table(name="matchs")
+ * @ORM\Entity
+ */
+class Matchs
+{
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="league_id", type="integer", nullable=true)
+     */
+    private $leagueId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="m_week", type="string", length=50, nullable=true)
+     */
+    private $mWeek;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="m_date", type="datetime", nullable=true)
+     */
+    private $mDate;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="h_team_id", type="integer", nullable=true)
+     */
+    private $hTeamId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="h_goals", type="integer", nullable=true)
+     */
+    private $hGoals;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="a_team_id", type="integer", nullable=true)
+     */
+    private $aTeamId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="a_goals", type="integer", nullable=true)
+     */
+    private $aGoals;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="match_id", type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $matchId;
+
+
+}
